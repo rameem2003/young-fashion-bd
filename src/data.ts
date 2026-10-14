@@ -128,7 +128,7 @@ export const PRODUCTS: Product[] = [
   { id: "k8", code: "YFB-K08", name: "Cable Knit Cardigan", category: "kids", tag: "Knit", img: "/images/kids-8.jpg" },
 
   { id: "h1", code: "YFB-H01", name: "Printed Bed Linen Set", category: "home", tag: "Bedding", img: "/images/home-1.jpg" },
-  { id: "h2", code: "YFB-H02", name: "Kitchen & Dining Set", category: "home", tag: "Kitchen", img: "/images/home-2.jpg" },
+  { id: "h2", code: "YFB-H02", name: "Kitchen and Dining Set", category: "home", tag: "Kitchen", img: "/images/home-2.jpg" },
   { id: "h3", code: "YFB-H03", name: "Floral Comforter Set", category: "home", tag: "Bedding", img: "/images/home-3.jpg" },
   { id: "h4", code: "YFB-H04", name: "Colour Towel Set", category: "home", tag: "Bath", img: "/images/home-4.jpg" },
 ];
@@ -162,12 +162,12 @@ export const SERVICES: Service[] = [
   },
   {
     no: "03",
-    title: "Time & Action Plan",
+    title: "Time and Action Plan",
     text: "Orders are closely monitored from sampling to shipment on a pro-active T&A plan, with daily status exchange so you always know where your order stands.",
   },
   {
     no: "04",
-    title: "Production & Quality Control",
+    title: "Production and Quality Control",
     text: "Each buyer receives a dedicated production and QC team. Workmanship plus rubbing, shrinkage and colour fastness tests are constantly checked, recorded and analysed.",
   },
   {
@@ -225,8 +225,8 @@ export const CAPABILITIES: Capability[] = [
 ];
 
 export const PROCESS: ProcessStep[] = [
-  { no: "01", title: "Enquiry & Development", text: "Tech pack review, fabric and trim sourcing, cost negotiation and development of counter samples." },
-  { no: "02", title: "Sampling & Approval", text: "Fit, size-set and bulk samples developed in-line with your labelling and packaging requirements." },
+  { no: "01", title: "Enquiry and Development", text: "Tech pack review, fabric and trim sourcing, cost negotiation and development of counter samples." },
+  { no: "02", title: "Sampling and Approval", text: "Fit, size-set and bulk samples developed in-line with your labelling and packaging requirements." },
   { no: "03", title: "Bulk Production", text: "Order placed with the right factory, monitored against a time & action plan until finishing." },
   { no: "04", title: "Inspection", text: "In-line and final AQL inspection by our team, plus third-party inspection if nominated." },
   { no: "05", title: "Shipment", text: "Documentation, consolidation and logistics assistance through to hand-over at port." },

@@ -10,7 +10,8 @@ export function Services() {
           eyebrow="Our services"
           title={
             <>
-              Sourcing, development and control �?" <em className="text-forest-600">under one roof</em>.
+              Sourcing, development and control —{" "}
+              <em className="text-forest-600">under one roof</em>.
             </>
           }
           intro="From the first enquiry to the final container, every order is run by a dedicated desk that reports to you daily."
@@ -36,7 +37,7 @@ export function Services() {
                   aria-hidden="true"
                   className="absolute right-7 bottom-7 text-[18px] text-gold opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100 sm:right-8 sm:bottom-8"
                 >
-                  �?'
+                  →
                 </span>
                 <span className="block h-6" />
               </article>
@@ -44,13 +45,18 @@ export function Services() {
           </div>
         </Reveal>
 
-        <Reveal delay={120} className="mt-8 flex flex-wrap items-center justify-between gap-4 text-[13px] text-muted">
-          <p>Manufacturing support from approximately 55 associated industries based in Bangladesh.</p>
+        <Reveal
+          delay={120}
+          className="mt-8 flex flex-wrap items-center justify-between gap-4 text-[13px] text-muted"
+        >
+          <p>
+            Manufacturing support from approximately 55 associated industries based in Bangladesh.
+          </p>
           <a
             href="#contact"
             className="inline-flex items-center gap-2 font-semibold text-forest-600 transition-colors hover:text-ink"
           >
-            Discuss your programme <span aria-hidden="true">�?'</span>
+            Discuss your programme <span aria-hidden="true">→</span>
           </a>
         </Reveal>
       </div>

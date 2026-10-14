@@ -126,7 +126,9 @@ export function Products() {
                     }`}
                   >
                     {tab.label}
-                    <span className={`ml-1.5 text-[11px] ${selected ? "text-ink/55" : "text-bone/35"}`}>
+                    <span
+                      className={`ml-1.5 text-[11px] ${selected ? "text-ink/55" : "text-bone/35"}`}
+                    >
                       {count}
                     </span>
                   </button>
@@ -200,11 +202,7 @@ export function Products() {
             tabIndex={-1}
             className="animate-scale-in relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-bone outline-none sm:grid sm:grid-cols-2"
           >
-            <img
-              src={active.img}
-              alt={active.name}
-              className="h-56 w-full object-cover sm:h-full"
-            />
+            <img src={active.img} alt={active.name} className="h-56 w-full object-cover sm:h-full" />
 
             <div className="p-6 sm:p-8">
               <div className="flex items-start justify-between gap-4">
@@ -223,13 +221,15 @@ export function Products() {
                 </button>
               </div>
 
-              <h3 className="display-title mt-5 text-[28px] text-ink sm:text-[32px]">{active.name}</h3>
+              <h3 className="display-title mt-5 text-[28px] text-ink sm:text-[32px]">
+                {active.name}
+              </h3>
               <p className="mt-2 text-[12px] tracking-[0.16em] text-muted uppercase">
                 Style {active.code}
               </p>
 
               <p className="mt-5 text-[14.5px] leading-relaxed text-muted">
-                Developed and produced through our own merchandising desk in Dhaka �?" fabric, wash,
+                Developed and produced through our own merchandising desk in Dhaka — fabric, wash,
                 trims and packaging confirmed against your tech pack before bulk approval.
               </p>
 

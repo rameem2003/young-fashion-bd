@@ -19,7 +19,11 @@ export function Compliance() {
 
           <Reveal delay={80}>
             <p className="max-w-sm rounded-xl border border-ink/10 bg-white/70 p-5 text-[13.5px] leading-relaxed text-muted">
-              Third-party or buyer-nominated inspection �?" <strong className="font-semibold text-ink/80">Bureau Veritas, SGS, ITS, AQM, Hohenstein</strong> �?" arranged as per customer requirements.
+              Third-party or buyer-nominated inspection —{" "}
+              <strong className="font-semibold text-ink/80">
+                Bureau Veritas, SGS, ITS, AQM, Hohenstein
+              </strong>{" "}
+              — arranged as per customer requirements.
             </p>
           </Reveal>
         </div>

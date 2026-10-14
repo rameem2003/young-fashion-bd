@@ -21,7 +21,8 @@ export function Contact() {
     const message = String(data.get("message") ?? "").trim();
 
     if (name.length < 2) nextErrors.name = "Please enter your name.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) nextErrors.email = "Enter a valid email address.";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+      nextErrors.email = "Enter a valid email address.";
     if (message.length < 10) nextErrors.message = "Tell us a little more (10+ characters).";
 
     setErrors(nextErrors);
@@ -49,8 +50,8 @@ export function Contact() {
             </h2>
             <p className="mt-5 max-w-lg text-[15.5px] leading-relaxed text-bone/70">
               Our management is a highly motivated and qualified team of technicians and
-              professionals. Tell us about your programme and we will respond with a development
-              plan and price.
+              professionals. Tell us about your programme and we will respond with a development plan
+              and price.
             </p>
           </Reveal>
 
@@ -84,7 +85,15 @@ export function Contact() {
                     </svg>
                   ) : (
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.7" />
+                      <rect
+                        x="3"
+                        y="5"
+                        width="18"
+                        height="14"
+                        rx="2"
+                        stroke="currentColor"
+                        strokeWidth="1.7"
+                      />
                       <path d="m3.5 7 8.5 6 8.5-6" stroke="currentColor" strokeWidth="1.7" />
                     </svg>
                   )}
@@ -117,7 +126,7 @@ export function Contact() {
                     />
                   </svg>
                 </span>
-                <h3 className="display-title mt-6 text-[28px]">Thank you �?" message received.</h3>
+                <h3 className="display-title mt-6 text-[28px]">Thank you — message received.</h3>
                 <p className="mt-3 max-w-sm text-[14.5px] leading-relaxed text-muted">
                   Our merchandising desk will come back to you within one business day. For anything
                   urgent, call {CONTACT.phone}.
@@ -133,7 +142,9 @@ export function Contact() {
             ) : (
               <form onSubmit={onSubmit} noValidate className="space-y-5">
                 <div>
-                  <p className="font-display text-[24px] leading-none font-medium">Request a quote</p>
+                  <p className="font-display text-[24px] leading-none font-medium">
+                    Request a quote
+                  </p>
                   <p className="mt-2.5 text-[13.5px] text-muted">
                     Share your enquiry and we will respond with development options.
                   </p>
@@ -141,14 +152,26 @@ export function Contact() {
 
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
-                    <label className="mb-2 block text-[11.5px] font-semibold tracking-[0.14em] text-muted uppercase" htmlFor="name">
+                    <label
+                      className="mb-2 block text-[11.5px] font-semibold tracking-[0.14em] text-muted uppercase"
+                      htmlFor="name"
+                    >
                       Name *
                     </label>
-                    <input id="name" name="name" type="text" className={FIELD} placeholder="Your full name" />
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      className={FIELD}
+                      placeholder="Your full name"
+                    />
                     {errors.name && <p className="mt-1.5 text-[12.5px] text-red-600">{errors.name}</p>}
                   </div>
                   <div>
-                    <label className="mb-2 block text-[11.5px] font-semibold tracking-[0.14em] text-muted uppercase" htmlFor="phone">
+                    <label
+                      className="mb-2 block text-[11.5px] font-semibold tracking-[0.14em] text-muted uppercase"
+                      htmlFor="phone"
+                    >
                       Phone
                     </label>
                     <input id="phone" name="phone" type="tel" className={FIELD} placeholder="+880 ..." />
@@ -156,15 +179,29 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-[11.5px] font-semibold tracking-[0.14em] text-muted uppercase" htmlFor="email">
+                  <label
+                    className="mb-2 block text-[11.5px] font-semibold tracking-[0.14em] text-muted uppercase"
+                    htmlFor="email"
+                  >
                     Email *
                   </label>
-                  <input id="email" name="email" type="email" className={FIELD} placeholder="you@company.com" />
-                  {errors.email && <p className="mt-1.5 text-[12.5px] text-red-600">{errors.email}</p>}
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    className={FIELD}
+                    placeholder="you@company.com"
+                  />
+                  {errors.email && (
+                    <p className="mt-1.5 text-[12.5px] text-red-600">{errors.email}</p>
+                  )}
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-[11.5px] font-semibold tracking-[0.14em] text-muted uppercase" htmlFor="interest">
+                  <label
+                    className="mb-2 block text-[11.5px] font-semibold tracking-[0.14em] text-muted uppercase"
+                    htmlFor="interest"
+                  >
                     Interest
                   </label>
                   <select id="interest" name="interest" className={FIELD} defaultValue="">
@@ -181,7 +218,10 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-[11.5px] font-semibold tracking-[0.14em] text-muted uppercase" htmlFor="message">
+                  <label
+                    className="mb-2 block text-[11.5px] font-semibold tracking-[0.14em] text-muted uppercase"
+                    htmlFor="message"
+                  >
                     Message *
                   </label>
                   <textarea
@@ -189,9 +229,11 @@ export function Contact() {
                     name="message"
                     rows={4}
                     className={`${FIELD} resize-none`}
-                    placeholder="Product, quantity, target price and delivery window�?�"
+                    placeholder="Product, quantity, target price and delivery window…"
                   />
-                  {errors.message && <p className="mt-1.5 text-[12.5px] text-red-600">{errors.message}</p>}
+                  {errors.message && (
+                    <p className="mt-1.5 text-[12.5px] text-red-600">{errors.message}</p>
+                  )}
                 </div>
 
                 <button
@@ -199,14 +241,20 @@ export function Contact() {
                   className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-ink px-7 py-4 text-sm font-semibold text-bone transition-colors hover:bg-forest"
                 >
                   Send enquiry
-                  <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">
-                    �?'
+                  <span
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                    aria-hidden="true"
+                  >
+                    →
                   </span>
                 </button>
 
                 <p className="text-center text-[12px] text-muted">
                   Or email us directly at{" "}
-                  <a className="font-semibold text-forest-600 underline-offset-2 hover:underline" href={`mailto:${CONTACT.email}`}>
+                  <a
+                    className="font-semibold text-forest-600 underline-offset-2 hover:underline"
+                    href={`mailto:${CONTACT.email}`}
+                  >
                     {CONTACT.email}
                   </a>
                 </p>

@@ -47,18 +47,16 @@ interface CounterProps {
   className?: string;
 }
 
+const prefersReducedMotion = () =>
+  typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 export function Counter({ to, suffix = "", duration = 1500, className = "" }: CounterProps) {
   const ref = useRef<HTMLSpanElement | null>(null);
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(() => (prefersReducedMotion() ? to : 0));
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setValue(to);
-      return;
-    }
+    if (!el || prefersReducedMotion()) return;
 
     let frame = 0;
     const observer = new IntersectionObserver(

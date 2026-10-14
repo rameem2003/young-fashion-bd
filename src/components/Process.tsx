@@ -21,7 +21,7 @@ export function Process() {
           <ol className="relative grid gap-10 md:grid-cols-5 md:gap-6">
             <span
               aria-hidden="true"
-              className="absolute top-7 right-7 left-7 hidden h-px bg-bone/15 md:block"
+              className="absolute top-7 left-7 right-[calc(20%-1.75rem)] hidden h-px bg-bone/15 md:block"
             />
             {PROCESS.map((step) => (
               <li key={step.no} className="relative flex gap-5 md:block">

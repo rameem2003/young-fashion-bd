@@ -50,7 +50,7 @@ export function About() {
           <Reveal delay={90} className="mt-6 space-y-5">
             <p className="text-[15.5px] leading-relaxed text-muted">
               Young Fashion BD is a Bangladesh-based trading house and the traditional dress
-              manufacturer for ready-made garments �?" sweater, knit and woven items �?" in Bangladesh.
+              manufacturer for ready-made garments — sweater, knit and woven items — in Bangladesh.
             </p>
             <p className="text-[15.5px] leading-relaxed text-muted">
               We provide professional services across design selection, evaluation, business
@@ -83,9 +83,9 @@ export function About() {
           <Reveal delay={230} className="mt-10">
             <blockquote className="border-l-2 border-gold pl-6">
               <p className="font-display text-[19px] leading-snug font-light text-ink italic sm:text-[21px]">
-                �?oMutual trust will help to establish a long-term partnership with our clients to
-                promote mutual benefits �?" each party focusing on its own strengths, with Young
-                Fashion BD bringing them together.�?�
+                “Mutual trust will help to establish a long-term partnership with our clients to
+                promote mutual benefits — each party focusing on its own strengths, with Young
+                Fashion BD bringing them together.”
               </p>
             </blockquote>
           </Reveal>
